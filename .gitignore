@@ -1,0 +1,13 @@
+node_modules/
+data/
+*.sqlite
+*.sqlite-*
+config/dev.env
+config/prod.env
+config/test.env
+.env
+.env.*
+!.env.example
+dist/
+mobile/android/build/
+*.zip

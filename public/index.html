@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FirstGear Car Rentals | Car hire in Coimbatore with optional GearPilot driver</title>
+  <meta name="description" content="Rent well-kept cars in Coimbatore with transparent pricing, add a professional GearPilot driver, and book in minutes. Open 7 days, phone support any time.">
+  <meta property="og:title" content="FirstGear Car Rentals">
+  <meta property="og:description" content="Premium car hire with optional GearPilot driver. Check availability, then chat with us on WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0a12">
+  <link rel="icon" href="/img/favicon.png" type="image/png">
+  <link rel="canonical" href="/">
+  <link rel="stylesheet" href="/vendor/flatpickr.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/vendor/flatpickr.js" defer></script>
+  <script src="/js/calendar.js" defer></script>
+  <script src="/js/theme.js"></script>
+  <script src="/js/common.js" defer></script>
+  <script src="/js/reviews-ui.js" defer></script>
+  <script src="/js/home.js" defer></script>
+</head>
+<body class="home-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">Premium car rental</span>
+          <h1 id="hero-title">Drive the <span class="grad-text">extraordinary</span>. Or be driven.</h1>
+          <p class="lead">Hand-picked cars, clear pricing and an optional professional GearPilot driver. See what is free for your dates, then chat with us on WhatsApp to reserve.</p>
+          <div class="cta-row"><a class="btn" id="hero-whatsapp" href="/fleet">Chat on WhatsApp</a><a class="btn ghost" id="hero-instagram" href="/#contact">Follow us on Instagram</a></div>
+          <form class="search-card" id="search-form" aria-label="Search available cars">
+            <div class="search-grid">
+              <div class="field"><label for="s-start">Pick-up date</label><input type="date" id="s-start" name="start" required></div>
+              <div class="field"><label for="s-days">Duration</label><select id="s-days" name="days" required><option value="1">1 day</option><option value="2">2 days</option><option value="3" selected>3 days</option><option value="4">4 days</option><option value="5">5 days</option><option value="7">7 days</option><option value="10">10 days</option><option value="14">14 days</option><option value="21">21 days</option><option value="30">30 days</option></select></div>
+            </div>
+            <div class="search-actions">
+              <button class="btn" type="submit">Check availability</button>
+            </div>
+            <div id="search-msg" aria-live="polite"></div>
+          </form>
+          <div class="hero-badges"><span class="chip" id="chip-phone"></span><span class="chip" id="chip-free"></span></div>
+        </div>
+        <div class="reveal" data-delay="2" id="hero-art"></div>
+      </div>
+    </section>
+
+    <div class="container"><div class="stats">
+      <div class="stat reveal"><b data-count="34">0</b><span>Cars in the fleet</span></div>
+      <div class="stat reveal" data-delay="1"><b id="stat-rating">-</b><span>Average customer rating</span></div>
+      <div class="stat reveal" data-delay="2"><b>24/7</b><span>Phone support</span></div>
+      <div class="stat reveal" data-delay="3"><b>1 chat</b><span>On WhatsApp to reserve</span></div>
+    </div></div>
+
+    <section class="section" id="fleet" aria-labelledby="fleet-title">
+      <div class="container">
+        <div class="section-head fleet-heading reveal"><div><span class="eyebrow">The fleet</span><h2 id="fleet-title">Find your next ride</h2><p class="lead"><strong><em>From city hatchbacks to 7-seater family cars and rugged SUVs. Every car is rated by real customers.</em></strong></p></div><a class="btn ghost" href="/fleet">View full fleet</a></div>
+        <div class="grid" id="featured"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+      </div>
+    </section>
+
+    <section class="section brands-section" aria-labelledby="brands-title"><div class="container"><h2 id="brands-title" class="eyebrow">Brands in our fleet</h2><div class="brands-strip reveal" id="brands-strip"></div></div></section>
+    <section class="section ev-section" aria-labelledby="ev-title"><div class="container ev-banner">
+      <div><span class="eyebrow">Go electric</span><h2 id="ev-title">Skip the pump. Keep the adventure.</h2>
+        <p>Make your next city escape electric with our Tata Nexon EV. Explore an economical way to travel, with zero tailpipe emissions.</p>
+        <small class="muted">Trip costs depend on rental rates, charging tariffs and distance. Plan charging stops before longer journeys.</small></div>
+      <a class="btn" href="/fleet?fuel=electric&amp;sort=price_asc">Explore EV cars &rarr;</a>
+    </div></section>
+
+    <section class="section alt" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="reveal"><span class="eyebrow">Why FirstGear</span><h2 id="why-title">Premium, without the small print</h2></div>
+        <div class="features">
+          <article class="feature reveal"><div class="ico" id="i1"></div><h3>Transparent pricing</h3><p class="muted">See the full price, tax included, before you commit. No desk surprises.</p></article>
+          <article class="feature reveal" data-delay="1"><div class="ico" id="i2"></div><h3>Fully protected</h3><p class="muted">Add zero-excess cover in one tap and drive with total peace of mind.</p></article>
+          <article class="feature reveal" data-delay="2"><div class="ico" id="i3"></div><h3>Skip the desk</h3><p class="muted">Pick up at the airport, downtown or the harbour. Return somewhere else if you like.</p></article>
+          <article class="feature reveal" data-delay="3"><div class="ico" id="i4"></div><h3>Real people, always</h3><p class="muted">Call any hour for breakdowns or changes, or chat with our assistant right now.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="chauffeur" aria-labelledby="chauffeur-title">
+      <div class="container split">
+        <div class="reveal">
+          <span class="eyebrow">GearPilot service</span>
+          <h2 id="chauffeur-title">Sit back. <span class="grad-text">We'll drive.</span></h2>
+          <p class="lead">Add a vetted, uniformed GearPilot driver to any car, or book one instead of driving yourself. Perfect for weddings, airport transfers, business days and nights out.</p>
+          <ul class="ticks" id="chauffeur-ticks"></ul>
+          <a class="btn" href="/fleet?driver=chauffeur">Book a GearPilot</a>
+        </div>
+        <div class="panel reveal" data-delay="2">
+          <h3>Check GearPilot availability</h3>
+          <form id="driver-form" novalidate>
+            <div class="form-grid">
+              <div class="field"><label for="dv-start">From</label><input type="date" id="dv-start" required></div>
+              <div class="field"><label for="dv-end">To</label><input type="date" id="dv-end" required></div>
+            </div>
+            <button class="btn ghost" type="submit">Check availability</button>
+          </form>
+          <div id="driver-result" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" aria-labelledby="how-title">
+      <div class="container"><div class="reveal"><span class="eyebrow">How it works</span><h2 id="how-title">Reserve in three steps</h2></div>
+        <div class="steps">
+          <div class="step reveal"><h3>Check availability</h3><p class="muted">Choose a pick-up date and how many days. We only show cars that are free for the whole stay.</p></div>
+          <div class="step reveal" data-delay="1"><h3>Read the checklist</h3><p class="muted">A short list of what to bring and what to expect, so there are no surprises at pick-up.</p></div>
+          <div class="step reveal" data-delay="2"><h3>Chat with us</h3><p class="muted">Message us on WhatsApp and we will confirm the car, the price and the pick-up. No online payment.</p></div>
+        </div></div>
+    </section>
+
+    <section class="section" id="rental-terms" aria-labelledby="terms-title">
+      <div class="container">
+        <div class="reveal"><span class="eyebrow">Rental terms</span><h2 id="terms-title">The essentials, in plain language</h2><p class="lead">A summary of our policies. The full agreement is provided at pick-up.</p></div>
+        <div class="terms-list reveal" id="terms-list"></div>
+      </div>
+    </section>
+
+    <section class="section alt" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-head reveal"><div><span class="eyebrow">Customer reviews</span><h2 id="reviews-title">Loved by our customers</h2></div><div class="big-rating" id="big-rating"></div></div>
+        <div class="testi-grid rv-grid" id="testimonials"></div>
+        <div class="rv-more hidden" id="rv-more"><a class="btn" id="rv-all" href="/reviews">View all reviews</a><a class="btn ghost" id="google-link" href="#" target="_blank" rel="noopener noreferrer">See us on Google</a></div>
+      </div>
+    </section>
+
+    <section class="section" id="feedback" aria-labelledby="fb-title">
+      <div class="container split">
+        <div class="reveal"><span class="eyebrow">Your feedback</span><h2 id="fb-title">Tell us how we did</h2><p class="lead">Your feedback helps us improve. With your permission, we may publish it as a testimonial after a quick review.</p></div>
+        <form class="panel reveal" data-delay="2" id="feedback-form" novalidate>
+          <div class="form-grid">
+            <div class="field"><label for="fb-name">Name</label><input id="fb-name" name="name" required maxlength="80" autocomplete="name"></div>
+            <div class="field"><label for="fb-email">Email</label><input id="fb-email" name="email" type="email" required maxlength="254" autocomplete="email"></div>
+          </div>
+          <fieldset class="star-input field" id="fb-stars"><legend class="sr-only">Overall rating</legend>
+            <input type="radio" id="fs5" name="rating" value="5"><label for="fs5" title="5 stars">&#9733;<span class="sr-only">5 stars</span></label>
+            <input type="radio" id="fs4" name="rating" value="4"><label for="fs4" title="4 stars">&#9733;<span class="sr-only">4 stars</span></label>
+            <input type="radio" id="fs3" name="rating" value="3"><label for="fs3" title="3 stars">&#9733;<span class="sr-only">3 stars</span></label>
+            <input type="radio" id="fs2" name="rating" value="2"><label for="fs2" title="2 stars">&#9733;<span class="sr-only">2 stars</span></label>
+            <input type="radio" id="fs1" name="rating" value="1"><label for="fs1" title="1 star">&#9733;<span class="sr-only">1 star</span></label>
+          </fieldset>
+          <div class="field"><label for="fb-msg">Your message</label><textarea id="fb-msg" name="message" required minlength="5" maxlength="1000"></textarea></div>
+          <label class="check field"><input type="checkbox" name="allowPublish"> You may publish my feedback as a testimonial (first name only)</label>
+          <button class="btn" type="submit">Send feedback</button>
+          <div id="fb-msg-out" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="join" aria-labelledby="join-title">
+      <div class="container"><div class="panel join-panel reveal"><div><span class="eyebrow">Partner with us</span><h2 id="join-title">Want to Join First Gear?</h2><p class="muted" id="join-text">Reach us on our number and we will tell you how.</p></div>
+        <div class="contact-answer-actions"><a class="btn" id="join-call" href="#"></a><a class="btn ghost" id="join-whatsapp" href="#">WhatsApp us</a></div></div></div>
+    </section>
+
+    <section class="section alt" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div class="reveal"><span class="eyebrow">Contact</span><h2 id="contact-title">We're here, any time</h2>
+          <ul class="contact-list" id="contact-list"></ul></div>
+        <div class="panel contact-answer reveal" data-delay="2"><div><h3>Need an answer now?</h3><p class="muted">Our phone line is answered around the clock for urgent requests, breakdowns and last-minute bookings.</p></div>
+          <div class="contact-answer-actions"><a class="btn" id="contact-call" href="#"></a><button class="btn ghost" type="button" id="contact-chat">Chat with us</button></div></div>
+        <div><h3>Follow us</h3><ul class="socials" id="contact-socials" aria-label="Social media"></ul></div>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+</body>
+</html>
